@@ -23,7 +23,7 @@ app.use("/api/courses", courseRouter);
 app.use("/api/users", userRouter);
 
 app.get("/", (req, res) => {
-  res.send("Server is ready");
+  res.send("Server is ready！！");
 });
 app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });
